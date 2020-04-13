@@ -8,7 +8,7 @@ Code can be found [here](http://github.com/Cwall4/Pewlett-Hackard-Analysis/edit/
 
 ## Part 1
 
-A query was written for 'Number of [titles] Retiring', and the output table was exported to 'num_titles_retiring.csv'. This table joins the employees, titles, and salaries tables. Each observation must satisfy two conditions for inclusion; the employees' birth date being between within 1952-1955, and their hire date being within 1985-1988.
+A query was written for "Number of [titles] Retiring", and the output table was exported to "num_titles_retiring.csv". This table joins the employees, titles, and salaries tables. Each observation must satisfy two conditions for inclusion; the employees' birth date being between within 1952-1955, and their hire date being within 1985-1988.
 
 ```SQL
 SELECT e.emp_no,
@@ -27,7 +27,7 @@ WHERE (e.birth_date BETWEEN '1952-01-01' AND '1955-12-31')
 	AND (e.hire_date BETWEEN '1985-01-01' AND '1988-12-31');
 ```
 
-A second table, 'titles_retiring_most_recent.csv', was queried and saved. By removing duplicate names from 'num_titles_retiring.csv', this table contains one row per employee, showing their most recent title.
+A second table, "titles_retiring_most_recent.csv", was queried and saved. By removing duplicate names from "num_titles_retiring.csv", this table contains one row per employee, showing their most recent title.
 
 ```SQL
 -- Only Most Recent Titles
@@ -42,7 +42,7 @@ FROM
 WHERE num = 1;
 ```
 
-A third table, 'count_titles_retiring.csv', shows the count of each title in 'titles_retiring_most_recent.csv'. In theory, this tells each department how many spots will be vacant.
+A third table, "count_titles_retiring.csv", shows the count of each title in "titles_retiring_most_recent.csv". In theory, this tells each department how many spots will be vacant.
 
 ```SQL
 -- The table above should have one entry per employee, keeping their most recent title.
@@ -54,7 +54,7 @@ FROM titles_retiring_most_recent
 GROUP BY title;
 ```
 
-'mentor_info.csv' returns promising candidates' full names, title, and date that title was earned, as long as they are still at the company. In the query, this is interpreted as the to_date being '9999-01-01'.
+"mentor_info.csv" returns promising candidates' full names, title, and date that title was earned, as long as they are still at the company. In the query, this is interpreted as the to_date being "9999-01-01".
 
 ```SQL
 -- Who's Ready for a Mentor?
