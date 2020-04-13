@@ -1,4 +1,4 @@
-# Pewlett-Hackard-Analysis
+# Pewlett Hackard Analysis
 
 For this challenge, Bobby was asked for some more lists in addition to those previously requested by Pewlett-Hackard.
 
