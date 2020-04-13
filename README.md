@@ -4,6 +4,8 @@ For this challenge, Bobby was asked for some more lists in addition to those pre
 
 Queries and joins were made using pgAdmin, in PostgreSQL 12, to the PH-EmployeeDB server.
 
+Code can be found [here](http://github.com/Cwall4/Pewlett-Hackard-Analysis/edit/master/challenge.sql).
+
 ## Part 1
 
 A query was written for 'Number of [titles] Retiring', and the output table was exported to 'num_titles_retiring.csv'. This table joins the employees, titles, and salaries tables. Each observation must satisfy two conditions for inclusion; the employees' birth date being between within 1952-1955, and their hire date being within 1985-1988.
